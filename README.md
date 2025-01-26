@@ -1,19 +1,29 @@
 # README (English version)
 
 Audio player
+
 Firmware ver.6
 
 ## Notice
 This firmware use "ESP8266Audio" and "Adafruit_GFX" libraries etc.
 These libraries are not developed by me. So, I will delete this repository if I pointed out by these developers.
 
+## Circuit
+
+
 ## Functions
 ・Volume adjust (20 steps)
+
 ・music selection
+
 ・Play and Pause button
+
 add at ver.2
+
 ・Automatic playing (only a music, loop a music, playing all music)
+
 add at ver.3
+
 ・Playlist (directory as playlist)
 
 ## music format
@@ -22,20 +32,32 @@ add at ver.3
 ## hardware specification
 ### Microcontroller: ESP32-WROOM-32E
   CPU clock: 240MHz
+
   FLASH: 4MB
+
 ### DAC: PCM5102A
   Interface: I2S
+
   Resolution: 32bit
+
   Max frequency: 384kHz
+
   LPF: 470Ω + 2200pF (cut-off: 153.9kHz)
+
 ### LCD: MSP2807
   Interface: SPI
+
   LCD driver: ILI9341
+
   Touch controller: TSC2046
+
 ### Battery: Litium polimer
   Voltage: 3.82V (3.3~4.3V)
+
   Capacity: 1821mAh
+
   Manifacturer: Apple Inc. (This battery from iPhone SE2)
+
 ### Charge controller: MCP73831
   Charge current: 500mA
 
@@ -82,7 +104,11 @@ Add a function that ESP32 gets battery charging status from charging controller.
 
 ## rules of version change
 ver.A.B.C(X)
+
 A: Changed when large repair, for example, changing the hardware.
+
 B: Changed when add functions by software.
+
 C: Changed when bug fixed.
+
 'X' of version string means unimplemented version.
